@@ -1,0 +1,18 @@
+# Local credentials
+**/secrets.h
+**/.env
+
+# Python
+**/__pycache__/
+**/.venv/
+**/*.pyc
+
+# Voice samples / generated audio
+B_Voice_Pipeline/samples/*
+!B_Voice_Pipeline/samples/.gitkeep
+B_Voice_Pipeline/generated/*
+!B_Voice_Pipeline/generated/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
