@@ -26,8 +26,10 @@ All digital inputs in the example use `INPUT_PULLUP`, so pressed / active is `LO
 
 - `LoveVoice_Physical_Test.ino` — complete A-test firmware
 - `secrets.example.h` — optional Wi-Fi / local server configuration
+- `logger_server.py` — optional local event logger
+- `requirements.txt` — Python dependency for the logger
 
-## Run
+## Run — Serial-only test
 
 1. Open `LoveVoice_Physical_Test.ino` in Arduino IDE.
 2. Select **Arduino Nano ESP32**.
@@ -35,7 +37,31 @@ All digital inputs in the example use `INPUT_PULLUP`, so pressed / active is `LO
 4. Upload and open Serial Monitor at `115200` baud.
 5. Test the controls one by one and observe the event log.
 
-Wi-Fi is optional. To enable event upload, copy `secrets.example.h` to `secrets.h` and enter only local prototype credentials. `secrets.h` is ignored by Git.
+The physical interaction test works without Wi-Fi.
+
+## Optional — local event logging
+
+Install and start the logger:
+
+```bash
+cd A_Physical_Interaction
+pip install -r requirements.txt
+python logger_server.py
+```
+
+Then copy `secrets.example.h` to `secrets.h` and set your local Wi-Fi plus:
+
+```text
+http://YOUR_COMPUTER_IP:5000/record
+```
+
+The ESP32 will POST test events to the logger. You can inspect them at:
+
+```text
+http://YOUR_COMPUTER_IP:5000/records
+```
+
+`secrets.h` is ignored by Git.
 
 ## Expected test evidence
 
