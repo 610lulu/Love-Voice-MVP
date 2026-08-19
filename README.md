@@ -90,5 +90,3 @@ Love-Voice-MVP/
 ## Prototype Boundary
 
 These files are for **interaction-design and technical-feasibility testing only**. They are not medical-device software and should not be used for emergency-critical deployment.
-
-For voice cloning, use only recordings from a person who has explicitly consented to creation and use of the voice model. Never commit API keys, Wi-Fi credentials, private recordings, or generated personal voice files to this repository.
