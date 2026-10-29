@@ -87,6 +87,7 @@ Love-Voice-MVP/
         └── secrets.example.h
 ```
 
-## Prototype Boundary
+## C-test Voice simulation
 
-These files are for **interaction-design and technical-feasibility testing only**. They are not medical-device software and should not be used for emergency-critical deployment.
+<img width="3356" height="2612" alt="语音克隆测试" src="https://github.com/user-attachments/assets/6726c4a9-14ab-43e4-bb62-3b05807cb1ba" />
+
