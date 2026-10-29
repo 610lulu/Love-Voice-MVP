@@ -87,7 +87,7 @@ Love-Voice-MVP/
         └── secrets.example.h
 ```
 
-## C-test Voice simulation
+## C Test — Voice Simulation
 
 <img width="3356" height="2612" alt="语音克隆测试" src="https://github.com/user-attachments/assets/6726c4a9-14ab-43e4-bb62-3b05807cb1ba" />
 
